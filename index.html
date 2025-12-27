@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的任务清单</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="tasktitle">我的任务清单</h1>
+            <div class="addtask">
+                <input type="text" id="taskinput" placeholder="请输入新任务">
+                <button id="addbutton">添加</button><br>
+            </div>
+        </header>
+        <section class="fileters">
+            <button class="filter-btn active" data-filter="all">全部</button>
+            <button class="filter-btn" data-filter="active">未完成</button>
+            <button class="filter-btn" data-filter="completed">已完成</button>
+        </section>
+        <main class="tasklist">
+            <div class="taskitems">
+                <input type="checkbox" class="taskcheckbox">
+                <span class="tasktext">实例任务</span>
+                <button class="delete">删除</button>
+            </div>
+
+        </main>
+        <footer>
+            <span class="taskcount">未完成:1</span>
+            <button id="clear">清除已完成任务</button>
+        </footer>
+    </div>
+<script src="javascript.js"></script>
+</body>
+
+</html>
