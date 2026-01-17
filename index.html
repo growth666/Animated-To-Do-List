@@ -14,28 +14,37 @@
             <h1 class="tasktitle">我的任务清单</h1>
             <div class="addtask">
                 <input type="text" id="taskinput" placeholder="请输入新任务">
-                <button id="addbutton">添加</button><br>
+                <button id="addbutton">添加</button>
             </div>
         </header>
-        <section class="fileters">
+        <section class="calendar">
+            <div class="calendar-header">
+                <button id="prev-month">&lt;</button>
+
+                <h2 id="calendar-title"></h2>
+                <button id="next-month">&gt;</button>
+            </div>
+            <div class="calendar-grid"></div>
+        </section>
+        <section class="filters">
             <button class="filter-btn active" data-filter="all">全部</button>
             <button class="filter-btn" data-filter="active">未完成</button>
             <button class="filter-btn" data-filter="completed">已完成</button>
         </section>
         <main class="tasklist">
-            <div class="taskitems">
-                <input type="checkbox" class="taskcheckbox">
-                <span class="tasktext">实例任务</span>
-                <button class="delete">删除</button>
-            </div>
-
         </main>
         <footer>
-            <span class="taskcount">未完成:1</span>
-            <button id="clear">清除已完成任务</button>
+            <span class="taskcount">未完成:0</span>
+            <div class="footer-btn">
+                <button id="reset-bg">恢复默认背景</button>
+                <button id="change-bg">更换背景</button>
+                <button id="clear">清除已完成任务</button>
+                
+                <input type="file" id="bg-file" accept="image/*" style="display:none;">
+            </div>
         </footer>
     </div>
-<script src="javascript.js"></script>
+    <script src="javascript.js"></script>
 </body>
 
 </html>
