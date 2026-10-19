@@ -245,6 +245,6 @@ initBg();
 // 恢复默认背景
 const resetBgBtn = document.getElementById('reset-bg');
 resetBgBtn.addEventListener('click', () => {
-    container.style.backgroundImage = 'url(./image/220251206_000256.jpg)';
+    container.style.backgroundImage = 'url(./image/QQ图片20260811191030.jpg)';
     localStorage.removeItem('customBg');
 });
